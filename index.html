@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/4a6b57e46e.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="wt.css" />
+    <title>shop2Go Page</title>
+  </head>
+  <body>
+    <header>
+      <h1 onclick="openHome()" class="header-head">shop2Go</h1>
+      <div class="icons">
+        <i
+          class="fa-solid fa-cart-shopping cart-icon"
+          onclick="carttable()"
+        ></i>
+        <i class="fa-solid fa-user cart-icon" onclick="openLogin()"></i>
+      </div>
+    </header>
+    <div class="bg-container">
+      <div class="container" id="loginC" onclick="changeLogin()">
+        <header class="header">
+          <h1 class="title">Sign In</h1>
+        </header>
+
+        <section class="content">
+          <form class="login-form">
+            <label class="form-label" for="username">Username:</label>
+            <input
+              class="form-input"
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Enter your username"
+              required
+            />
+
+            <label class="form-label" for="password">Password:</label>
+            <input
+              class="form-input"
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+
+            <button class="btn-signin" type="submit">Sign In</button>
+          </form>
+        </section>
+      </div>
+      <div class="container-table d-none" id="tableC">
+        <header class="header-table">
+          <h1 class="title-table">Cart items</h1>
+        </header>
+
+        <section class="content-table">
+          <table class="shopping-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cute Floral Dress</td>
+                <td>Clothing</td>
+                <td>$39.99</td>
+                <td>1</td>
+                <td>$39.99</td>
+              </tr>
+              <tr>
+                <td>Sparkling Princess Tiara</td>
+                <td>Accessories</td>
+                <td>$14.95</td>
+                <td>1</td>
+                <td>$14.95</td>
+              </tr>
+              <tr>
+                <td>Fairy Tale Storybook Set</td>
+                <td>Books</td>
+                <td>$19.99</td>
+                <td>2</td>
+                <td>$39.98</td>
+              </tr>
+              <tr>
+                <td>Unicorn Plush Toy</td>
+                <td>Toys</td>
+                <td>$24.99</td>
+                <td>1</td>
+                <td>$24.99</td>
+              </tr>
+              <tr>
+                <td>Girly Laptop Sticker Pack</td>
+                <td>Electronics</td>
+                <td>$9.99</td>
+                <td>1</td>
+                <td>$9.99</td>
+              </tr>
+              <tr>
+                <td>Floral Scented Candle</td>
+                <td>Home & Kitchen</td>
+                <td>$12.50</td>
+                <td>3</td>
+                <td>$37.50</td>
+              </tr>
+              <tr>
+                <td>Colorful Hair Clips Set</td>
+                <td>Beauty</td>
+                <td>$8.50</td>
+                <td>1</td>
+                <td>$8.50</td>
+              </tr>
+              <tr>
+                <td>Dancing Ballet Shoes</td>
+                <td>Sports</td>
+                <td>$29.99</td>
+                <td>1</td>
+                <td>$29.99</td>
+              </tr>
+              <tr>
+                <td>Puzzle Board Game for Girls</td>
+                <td>Toys</td>
+                <td>$15.99</td>
+                <td>2</td>
+                <td>$31.98</td>
+              </tr>
+              <tr>
+                <td>Hello Kitty Backpack</td>
+                <td>Accessories</td>
+                <td>$34.99</td>
+                <td>1</td>
+                <td>$34.99</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </div>
+
+    <div id="home">
+      <section class="featured-products">
+        <div class="product">
+          <img src="shopping5.jpg" alt="Product 1" />
+          <h2 class="product-title">Stylish Clothing Collection for men</h2>
+          <p class="product-description">
+            Discover the latest trends for a fashionable you!
+          </p>
+        </div>
+
+        <div class="product">
+          <img src="shopping1.jpeg" alt="Product 2" />
+          <h2 class="product-title">Tech Gadgets for You</h2>
+          <p class="product-description">
+            Stay up-to-date with the coolest gadgets in town.
+          </p>
+        </div>
+
+        <div class="product">
+          <img src="shopping2.jpeg" alt="Product 3" />
+          <h2 class="product-title">Home Decor Delights</h2>
+          <p class="product-description">
+            Transform your living space with our beautiful decor items.
+          </p>
+        </div>
+        <div class="product">
+          <img src="shopping.jpeg" alt="Product 4" />
+          <h2 class="product-title">Stylish Clothing Collection for women</h2>
+          <p class="product-description">
+            Discover the latest trends for a fashionable you!
+          </p>
+        </div>
+        <div class="product">
+          <img src="shopping4.jpg" alt="Product 5" />
+          <h2 class="product-title">Stylish Clothing Collection for kids</h2>
+          <p class="product-description">
+            Discover the latest trends for a fashionable you!
+          </p>
+        </div>
+        <div class="product">
+          <img src="shopping 3.jpg" alt="Product 6" />
+          <h2 class="product-title">cosematics Collection</h2>
+          <p class="product-description">
+            Transform your face with our good cosematics Collection.
+          </p>
+        </div>
+        <div class="product">
+          <img src="shopping6.jpg" alt="Product 7" />
+          <h2 class="product-title">Latest footwear Collection</h2>
+          <p class="product-description">
+            Sneakers can add personality to your outfit!!
+          </p>
+        </div>
+        <div class="product">
+          <img src="shopping7.jpg" alt="Product 8" />
+          <h2 class="product-title">Ear phones and Ear pods</h2>
+          <p class="product-description">
+            Superior sound with Tengible Quality.
+          </p>
+        </div>
+
+        <div class="product">
+          <img src="shopping8.jpg" alt="Product 9" />
+          <h2 class="product-title">shop for Grocery items</h2>
+          <p class="product-description">
+            Enjoy your healthy life by getting fresh grocery.
+          </p>
+        </div>
+        
+      </section>
+
+      <section class="about-us">
+        <h2 class="section-title">About Us</h2>
+        <p class="section-description">
+          At Our Shopping Paradise, we strive to provide you with the best
+          shopping experience. Explore our wide range of products, from trendy
+          clothing to cutting-edge electronics ,exquisite home decor,good collection of cosematics
+          and best collection of sneakers. We are
+          committed to delivering quality and style right to your doorstep.
+          our website that allows you to buy and sell tangible goods, digital products, or services online.
+
+          Happy shopping!
+        </p>
+      </section>
+
+      <section class="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-description">
+          Have questions or need assistance? Feel free to reach out to our
+          customer support team. We are here to help!
+        </p>
+        <p class="section-description">
+          Email: support@shoptoGo.com
+        </p>
+      </section>
+    </div>
+    <div class="foot">  <footer>
+      <div class="foot-panel1">
+        Thanks for visiting
+      </div>
+      <div class="foot-panel2">
+        <ul>
+          <p>shop2Go.co</p>
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-youtube"></i>
+          <i class="bi bi-twitter"></i>
+          <i class="bi bi-instagram"></i>
+        </ul>
+        <ul>
+          <p>SUPPORT</p>
+          <a>Contact Us</a>
+          <a>FAQs</a>
+          <a>Size Guide</a>
+          <a>Shipping & Returns</a>
+    
+        </ul>
+        <ul>
+          <p>SHOP</p>
+          <a>Men's Shopping</a>
+          <a>Women's Shopping</a>
+          <a>Kids' Shopping</a>
+          <a>Discounts</a>
+        </ul>
+        <ul>
+          <p>COMPANY</p>
+          <a>Our Story</a>
+          <a>Careers</a>
+          <a>Terms & Conditions</a>
+          <a>Privacy & Cookie policy</a>
+    
+        </ul>
+        <ul>
+          <p>CONTACT</p>
+          <a>111-222-333</a>
+          <a>444-555-666</a>
+          <a href="https://gethuman.com/email/Rolex">Mail us</a>
+          <a></a>
+    
+        </ul>
+        
+      </div>
+      <div class="foot-panel3">
+        <i class="bi bi-c-circle"></i> All rights Reserved.
+      </div>
+    </footer></div>
+
+    <script>
+      function openHome() {
+        let home = (document.getElementById("home").style.display = "block");
+        let loginC = (document.getElementById("loginC").style.display = "none");
+        let tableC = (document.getElementById("tableC").style.display = "none");
+      }
+      function changeLogin() {
+        let loginC = (document.getElementById("loginC").style.display = "none");
+      }
+      function openLogin() {
+        let loginC = (document.getElementById("loginC").style.display =
+          "block");
+      }
+      function carttable() {
+        let home = (document.getElementById("home").style.display = "none");
+        let loginC = (document.getElementById("loginC").style.display = "none");
+        let tableC = (document.getElementById("tableC").style.display =
+          "block");
+      }
+    </script>
+  </body>
+</html>
